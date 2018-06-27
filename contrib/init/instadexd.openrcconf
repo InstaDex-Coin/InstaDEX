@@ -1,0 +1,26 @@
+# /etc/conf.d/instadexd: config file for /etc/init.d/instadexd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/instadex/instadex.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/instadexd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/instadexd.pid"
+
+# Where to write instadexd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/instadexd"
+
+# User and group to own instadexd process
+#BITCOIND_USER="instadex"
+#BITCOIND_GROUP="instadex"
+
+# Path to instadexd executable
+#BITCOIND_BIN="/usr/bin/instadexd"
+
+# Nice value to run instadexd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

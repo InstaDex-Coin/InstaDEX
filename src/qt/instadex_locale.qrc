@@ -1,0 +1,20 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/instadex_bg.qm</file>
+        <file alias="de">locale/instadex_de.qm</file>
+        <file alias="en">locale/instadex_en.qm</file>
+        <file alias="es">locale/instadex_es.qm</file>
+        <file alias="fi">locale/instadex_fi.qm</file>
+        <file alias="fr">locale/instadex_fr.qm</file>
+        <file alias="it">locale/instadex_it.qm</file>
+        <file alias="ja">locale/instadex_ja.qm</file>
+        <file alias="pl">locale/instadex_pl.qm</file>
+        <file alias="pt">locale/instadex_pt.qm</file>
+        <file alias="ru">locale/instadex_ru.qm</file>
+        <file alias="sk">locale/instadex_sk.qm</file>
+        <file alias="sv">locale/instadex_sv.qm</file>
+        <file alias="vi">locale/instadex_vi.qm</file>
+        <file alias="zh_CN">locale/instadex_zh_CN.qm</file>
+        <file alias="zh_TW">locale/instadex_zh_TW.qm</file>
+    </qresource>
+</RCC>

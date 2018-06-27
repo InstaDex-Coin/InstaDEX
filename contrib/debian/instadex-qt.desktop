@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=InstaDEX
+Comment=InstaDEX P2P Cryptocurrency
+Comment[fr]=InstaDEX, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=InstaDEX, eşten eşe kriptografik sanal para birimi
+Exec=instadex-qt %u
+Terminal=false
+Type=Application
+Icon=instadex128
+MimeType=x-scheme-handler/instadex;
+Categories=Office;Finance;
