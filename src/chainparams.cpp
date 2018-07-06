@@ -135,21 +135,21 @@ public:
         genesis.nNonce = 456766;
 				 
         hashGenesisBlock = genesis.GetHash();
-	    assert(hashGenesisBlock == uint256("0x00000696af0c5452ae8e272b95bed12466e76866c3f767954e1593951eefaba6"));
+	assert(hashGenesisBlock == uint256("0x00000696af0c5452ae8e272b95bed12466e76866c3f767954e1593951eefaba6"));
         assert(genesis.hashMerkleRoot == uint256("0x60ebebae9b90655e009504142d07460cc6542f4aa0af1252c8ba74775579a6c4"));
 		
-		vSeeds.push_back(CDNSSeedData("instadex.seeds.mn.zone", "instadex.seeds.mn.zone"));
-		vSeeds.push_back(CDNSSeedData("209.250.241.176", "209.250.241.176"));
+	vSeeds.push_back(CDNSSeedData("instadex.seeds.mn.zone", "instadex.seeds.mn.zone"));
+	vSeeds.push_back(CDNSSeedData("209.250.241.176", "209.250.241.176"));
         vSeeds.push_back(CDNSSeedData("209.250.243.131", "209.250.243.131"));
         vSeeds.push_back(CDNSSeedData("45.77.239.108", "45.77.239.108"));
-		vSeeds.push_back(CDNSSeedData("45.32.235.211", "45.32.235.211"));	
-		vSeeds.push_back(CDNSSeedData("107.191.44.102", "107.191.44.102"));
-		vSeeds.push_back(CDNSSeedData("108.61.188.67", "108.61.188.67"));	
-		vSeeds.push_back(CDNSSeedData("178.62.68.177", "178.62.68.177"));
+	vSeeds.push_back(CDNSSeedData("45.32.235.211", "45.32.235.211"));	
+	vSeeds.push_back(CDNSSeedData("107.191.44.102", "107.191.44.102"));
+	vSeeds.push_back(CDNSSeedData("108.61.188.67", "108.61.188.67"));	
+	vSeeds.push_back(CDNSSeedData("178.62.68.177", "178.62.68.177"));
         vSeeds.push_back(CDNSSeedData("178.62.67.100", "178.62.67.100")); 
-		vSeeds.push_back(CDNSSeedData("178.62.67.105", "178.62.67.105")); 
-		vSeeds.push_back(CDNSSeedData("178.62.67.165", "178.62.67.165")); 
-		vSeeds.push_back(CDNSSeedData("178.62.71.128", "178.62.71.128")); 
+	vSeeds.push_back(CDNSSeedData("178.62.67.105", "178.62.67.105")); 
+	vSeeds.push_back(CDNSSeedData("178.62.67.165", "178.62.67.165")); 
+	vSeeds.push_back(CDNSSeedData("178.62.71.128", "178.62.71.128")); 
 
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 102);
