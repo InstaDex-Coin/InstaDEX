@@ -54,15 +54,28 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x00000696af0c5452ae8e272b95bed12466e76866c3f767954e1593951eefaba6"));
-    //(280, uint256S("0x"));
+    (0, uint256("00000696af0c5452ae8e272b95bed12466e76866c3f767954e1593951eefaba6"))
+    (500, uint256S("0000031cab066a8c4c44b9831cdc146f0a0cbeacc2e36e578d8b4f5cc08be649"))
+	(1000, uint256S("0000001c097b1afc3ed97ec2ebf144a8837747a8ee5af30a2626c631b920338e"))
+	(5000, uint256S("bf48b1bd6770728dba205939716118127c95d0ce22f0006eda529c2504a61002"))
+	(10000, uint256S("ceea70591c3b7c8849460bc840ab8cd582443d359c41f7b7442c7e04ab6befc2"))
+	(15000, uint256S("b1280d0a0ed338dbc2fa75140b9f5e1b3bb44a801ca5248ceda1495c7d48ee36"))
+	(20000, uint256S("681c07f83d457cc968a05b78a524ee4edb3ea8e9f9eff9c2f1f121b3972eb190"))
+	(25000, uint256S("60d9f941ffce0e60dfaba6745154c3b77ddd1a27ccf662e71e74ed7e67752527"))
+	(26500, uint256S("a3aa0950cacad603ec20a9f5cb0ca97345c14ae70ea029720f3d6bab50c2fbf7"))
+	(26550, uint256S("b0389e243d947d274b625362c8e4fd96b9f37ae9c6ce9475fa78c331289e520b"))// Fork block/rollback point
+	(26551, uint256S("f235df68d2bdbdf2c7db02a70314aa54a16e8ade9bafcdda128e12b15d762920"))// First block on Forked chain
+	(26600, uint256S("150ac67005473d1990bf7ff63f082a4faf5560a0450fff7ab113314fcc54ad29"));
+	
+
+
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
     1514407942, // * UNIX timestamp of last checkpoint block
-    1,    // * total number of transactions between genesis and last checkpoint
+    52496,    // * total number of tx between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
-    2        // * estimated number of transactions per day after checkpoint
+    1440        // * estimated number of transactions per day after checkpoint
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
@@ -89,12 +102,12 @@ public:
         networkID = CBaseChainParams::MAIN;
         strNetworkID = "main";
 
-        pchMessageStart[0] = 0x11;
-        pchMessageStart[1] = 0xa6;
-        pchMessageStart[2] = 0xe9;
-        pchMessageStart[3] = 0x2f;
+        pchMessageStart[0] = 0x19;
+        pchMessageStart[1] = 0xc4;
+        pchMessageStart[2] = 0x91;
+        pchMessageStart[3] = 0xf3;
         vAlertPubKey = ParseHex("058045f32ac7aeb9f592e91267e95d5b77b6dc24600d51fcbe8fa9f2b047a0d1c4eb1bb962112e4cb0229b260f9ba7be8e2fc7d816619e98bb20acbc429c353179");
-        nDefaultPort = 7779;
+        nDefaultPort = 8889;
         bnProofOfWorkLimit = ~uint256() >> 12;
         nSubsidyHalvingInterval = 9999999;
         nMaxReorganizationDepth = 100;
@@ -138,15 +151,15 @@ public:
 	assert(hashGenesisBlock == uint256("0x00000696af0c5452ae8e272b95bed12466e76866c3f767954e1593951eefaba6"));
         assert(genesis.hashMerkleRoot == uint256("0x60ebebae9b90655e009504142d07460cc6542f4aa0af1252c8ba74775579a6c4"));
 		
-	vSeeds.push_back(CDNSSeedData("instadex.seeds.mn.zone", "instadex.seeds.mn.zone"));
+	//vSeeds.push_back(CDNSSeedData("instadex.seeds.mn.zone", "instadex.seeds.mn.zone"));
 	vSeeds.push_back(CDNSSeedData("209.250.241.176", "209.250.241.176"));
-        vSeeds.push_back(CDNSSeedData("209.250.243.131", "209.250.243.131"));
-        vSeeds.push_back(CDNSSeedData("45.77.239.108", "45.77.239.108"));
+    vSeeds.push_back(CDNSSeedData("209.250.243.131", "209.250.243.131"));
+    vSeeds.push_back(CDNSSeedData("45.77.239.108", "45.77.239.108"));
 	vSeeds.push_back(CDNSSeedData("45.32.235.211", "45.32.235.211"));	
 	vSeeds.push_back(CDNSSeedData("107.191.44.102", "107.191.44.102"));
 	vSeeds.push_back(CDNSSeedData("108.61.188.67", "108.61.188.67"));	
 	vSeeds.push_back(CDNSSeedData("178.62.68.177", "178.62.68.177"));
-        vSeeds.push_back(CDNSSeedData("178.62.67.100", "178.62.67.100")); 
+    vSeeds.push_back(CDNSSeedData("178.62.67.100", "178.62.67.100")); 
 	vSeeds.push_back(CDNSSeedData("178.62.67.105", "178.62.67.105")); 
 	vSeeds.push_back(CDNSSeedData("178.62.67.165", "178.62.67.165")); 
 	vSeeds.push_back(CDNSSeedData("178.62.71.128", "178.62.71.128")); 

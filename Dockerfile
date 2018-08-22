@@ -61,7 +61,7 @@ RUN echo "datadir=/opt/blockchain/data    \n\
 dbcache=256                               \n\
 maxmempool=512                            \n\
                                           \n\
-port=7779    # testnet: 41474            \n\
+port=8889    # testnet: 41474            \n\
 rpcport=7778 # testnet: 41419            \n\
                                           \n\
 listen=1                                  \n\
@@ -80,7 +80,7 @@ WORKDIR /opt/blockchain/
 VOLUME ["/opt/blockchain/config", "/opt/blockchain/data"]
 
 # Port, RPC, Test Port, Test RPC
-EXPOSE 7779 7778 41474 41419
+EXPOSE 8889 7778 41474 41419
 
 CMD ["instadexd", "-daemon=0"]
 
