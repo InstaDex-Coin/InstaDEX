@@ -1,5 +1,3 @@
-This is to confirm that I, Pesh on discord have access to the github repo.
-
 InstaDEX repository
 
 InstaDEX is an open source project building a blockchain based P2P atomic swap exchange using BIP65 capable chains
